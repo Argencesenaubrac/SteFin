@@ -1,53 +1,98 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Fin du Quiz</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            text-align: center;
-            max-width: 500px;
-        }
-        img {
-            max-width: 150px;
-            margin-bottom: 20px;
-        }
-        h1 {
-            color: #2c3e50;
-        }
-        p {
-            font-size: 18px;
-            color: #333;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Fin du Quiz</title>
+
+<style>
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100dvh;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+
+    background: linear-gradient(180deg, #a8c6d8, #eaf4f4);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: #2f3e4e;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+/* Carte */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Logo */
+.card-logo {
+    max-width: none;
+    width: 90%;
+    margin-bottom: 0px;
+}
+
+/* Texte */
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.card p:first-of-type {
+    margin-top: 8px;
+}
+
+
+button:hover {
+    background: #a8844f;
+    transform: translateY(-2px);
+}
+</style>
 </head>
+
 <body>
 
 <div class="container">
-    <!-- Logo -->
-    <img src="Logo.png" alt="Logo La quête des 11 clochers">
 
-    <h1>🎉 Bravo !</h1>
-    <p>
-        Tu as percé le secret du clocher de Sainte-Geneviève…  
-        Mais l’aventure continue !  
+    <div class="card">
+
+        <img src="Logo.png" alt="Logo" class="card-logo">
+
+        <h2>🎉 Bravo !</h2>
+
+        <p>
+        Tu as percé le secret du clocher de Sainte-Geneviève…
+        </p>
+
+        <p>
+        Mais l’aventure continue !
+        </p>
+
+        <p>
         D’autres énigmes t’attendent bientôt dans les villages d’Argences-en-Aubrac.  
         À toi de les découvrir !
-    </p>
+        </p>
+
+    </div>
+
 </div>
+
+<script>
+function restart(){
+    window.location.href="index.html";
+}
+</script>
 
 </body>
 </html>
