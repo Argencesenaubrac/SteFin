@@ -38,9 +38,21 @@ body {
 
 /* Logo */
 .card-logo {
-    max-width: none;
     width: 90%;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
+}
+
+/* Image clocher */
+.card-image {
+    width: 100%;
+    border-radius: 15px;
+    margin: 15px 0 20px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.card-image:hover {
+    transform: scale(1.03);
 }
 
 /* Texte */
@@ -64,6 +76,8 @@ p {
         <img src="Logo.png" alt="Logo" class="card-logo">
 
         <h2>🎉 Bravo !</h2>
+
+        <img src="clocher.jpg" alt="Clocher de Sainte-Geneviève" class="card-image">
 
         <p>
         Tu as percé le secret du clocher de Sainte-Geneviève…
