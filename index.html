@@ -11,97 +11,78 @@ html, body {
 
 body {
     margin: 0;
-    min-height: 100dvh;
     font-family: 'Segoe UI', sans-serif;
     text-align: center;
 
     background: linear-gradient(180deg, #a8c6d8, #eaf4f4);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
     color: #2f3e4e;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.container {
-    max-width: 600px;
-    margin: auto;
-    padding: 20px 15px; /* un peu réduit pour mobile */
-}
-
-/* Carte */
+/* Carte compacte */
 .card {
     background: white;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    padding: 18px 15px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    max-width: 320px;
+    width: 90%;
 }
 
 /* Logo */
 .card-logo {
-    width: 85%; /* légèrement réduit */
-    margin-bottom: 10px;
+    width: 70%;
+    margin-bottom: 5px;
 }
 
-/* Image clocher */
-.card-image {
-    width: 48%;
-    max-width: 150px;
-    border-radius: 12px;
-    margin: 10px auto 15px auto;
-    display: block;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
-    transition: transform 0.2s ease;
-}
-
-.card-image:hover {
-    transform: scale(1.05);
-}
-
-/* Texte */
+/* Titre */
 h2 {
-    margin-top: 5px;
+    margin: 5px 0 8px 0;
+    font-size: 20px;
 }
 
+/* Image compacte */
+.card-image {
+    width: 38%;
+    max-width: 110px;
+    border-radius: 10px;
+    margin: 6px auto 10px auto;
+    display: block;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+}
+
+/* Texte ultra compact */
 p {
-    line-height: 1.6;
-    margin-bottom: 15px;
-    font-size: 15px; /* plus lisible mobile */
-}
-
-.card p:first-of-type {
-    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="card">
 
-    <div class="card">
+    <img src="Logo.png" alt="Logo" class="card-logo">
 
-        <img src="Logo.png" alt="Logo" class="card-logo">
+    <h2>🎉 Bravo !</h2>
 
-        <h2>🎉 Bravo !</h2>
+    <img src="Clocher.jpg" alt="Clocher" class="card-image">
 
-        <img src="Clocher.jpg" alt="Clocher de Sainte-Geneviève" class="card-image">
-
-        <p>
-        Tu as percé le secret du clocher de Sainte-Geneviève…
-        </p>
-
-        <p>
-        Mais l’aventure continue !
-        </p>
-
-        <p>
-        D’autres énigmes t’attendent bientôt dans les villages d’Argences-en-Aubrac.  
-        À toi de les découvrir !
-        </p>
-
-    </div>
+    <p>
+    Tu as percé le secret du clocher de Sainte-Geneviève-sur-Argence<br>
+    L’aventure continue !<br>
+    D’autres énigmes t’attendent à Argences-en-Aubrac.
+    </p>
 
 </div>
+
+</body>
+</html>
 
 </body>
 </html>
