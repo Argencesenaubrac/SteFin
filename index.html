@@ -44,16 +44,19 @@ body {
 
 /* Image clocher */
 .card-image {
-    width: 100%;
+    width: 70%;              /* réduit la taille */
+    max-width: 300px;        /* limite sur grand écran */
     border-radius: 15px;
-    margin: 15px 0 20px 0;
+    margin: 15px auto 20px auto; /* centre l'image */
+    display: block;
     box-shadow: 0 5px 15px rgba(0,0,0,0.15);
     transition: transform 0.3s ease;
 }
 
 .card-image:hover {
-    transform: scale(1.03);
+    transform: scale(1.05);
 }
+    
 
 /* Texte */
 p {
